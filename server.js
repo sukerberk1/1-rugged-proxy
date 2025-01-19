@@ -30,8 +30,9 @@ app.use("/", async (req, res, next) => {
         // Example: Replace contact information
         $("a[href^='mailto:']").attr("href", "mailto:tutaj@liteko.com");
         $("a[href^='mailto:']").text("tutaj@liteko.com");
-        $("a[href^='tel:']").attr("href", "tel:+123456789");
-        $(".contact-info").text("Your Custom Contact Info");
+        $("a[href='https://www.onerugged.com']").attr("href", "/");
+        $("ul.offside").css("display", "none");
+        $("div.h_lan").css("display", "none");
 
         // Example: Translate some text
         $("h1").each((_, el) => {
